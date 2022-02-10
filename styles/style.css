@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:arial;
+}
+
+/*titulo principal*/
+.principal{
+    background-color:rgb(145, 92, 194);
+    height:100vh;
+    display:flex;
+    align-items:flex-start;
+    justify-content:center;
+}
+.outro{
+    display:flex;
+    flex-direction:column;
+    margin-top:100px;
+}
+h1{
+    font-size:40px;
+}
+/*numeros abaixo*/
+.calculo{
+    display:flex;
+    flex-direction:column;
+}
+.numeros{
+    display:flex;
+    width:350px;
+}
+.ntitle{
+    font-size:20px;
+}
+.vtitle{
+    font-size:20px;
+}
+.multi,.numbers{
+    display:flex;
+    flex-direction:column;
+    flex:1;
+    margin-right:10px;
+}
+#number, #vezes{
+    padding:10px 0px;
+    font-size:20px;
+}
+
+
+
+
+/*area de botões*/
+.botoes{
+    display:flex;
+    flex:1;
+    margin-top:20px;
+}
+.botoes .show,.clear{
+    flex:1;
+    text-align:center;
+    margin-right:10px;
+    font-size:25px;
+    padding:10px 0px;
+    cursor:pointer
+}
+.botoes .show{
+    background-color:green;
+}
+.botoes .clear{
+    background-color:gray;
+}
+
+
+/*area da resposta*/
+.algo{
+    background-color:white;
+    width:250px;
+    margin-top:100px;
+    overflow:auto;
+}
+.rtitle{
+    text-align:center;
+    font-size:20px;
+    color:white;
+    background-color:black;
+    padding:10px 0px;
+}
+.resposta{
+    height:400px;
+    font-size:26px;
+    padding:10px;
+}
+
+
+@media(min-width:400px) and (max-width:620px){
+    .principal{
+        flex-direction:column;
+    }
+    .outro{
+        margin:auto;
+    }
+    .algo{
+        margin:auto;
+    }
+    .resposta{
+        height:200px;
+    }
+}
+@media(max-width:399px){
+    .principal{
+        flex-direction:column;
+    }
+    .outro{
+        margin:auto;
+    }
+    .algo{
+        margin:auto;
+    }  
+    .numeros{
+        width:280px;
+    }
+    .resposta{
+        height:200px;
+    }
+}
